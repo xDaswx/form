@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+
+
+    </head>
+    <body>
+        <div class="container" >
+            <div class="title">
+                <h1>Cadastre-se</h1>
+                <p>A nossa plataforma possui mais de 25 milhões de clientes! e em apenas 6 meses você termina o curso preparado para obter mais de 900 pontos no enem!</p>
+            </div>
+
+            <div class="inputs">
+            
+                <div class="name center-input input-field">
+
+                    <span class="material-symbols-outlined">person</span>
+                    <input class="simple-inputs" placeholder="nome" type="text">
+                    
+
+                </div>
+
+                <div class="email center-input input-field">
+                    <span class="material-symbols-outlined">mail</span> <input class="simple-inputs" placeholder="e-mail" type="email">
+                </div>
+
+                <div class="password center-input input-field">
+                    <span class="material-symbols-outlined">password</span>
+                    <input class="simple-inputs" placeholder="senha" type="password">
+                    <i style="width: 28px;" class="gg-eye"></i>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox"> <a>Eu concordo com os <a style="color: #6b6ab5;">Termos de serviços</a></a>
+                </div>
+                <div class="submit">
+                    <button class="btn">Confirmar</button>
+                </div>
+               
+            </div>
+            <p>Ou continue com alguma rede social:</p>
+            <div class="social">
+                <div class="google btn-icon">
+                    <i class="gg-google"></i>
+                </div>
+                <div class="facebook btn-icon">
+                    <i class="gg-facebook"></i>
+                </div>
+                <div class="twitter btn-icon">
+                    <i class="gg-twitter"></i>
+                </div>
+            </div>
+            <div>
+                <p>Já é membro? <br>Entre em sua conta clicando <a style="color: #6b6ab5;">aqui</a></p>
+            </div>
+        </div>
+    <script>
+        const password = document.querySelector('.password input')
+        const show = document.querySelector('.gg-eye').addEventListener('click', show_pass)
+        
+        function show_pass(){
+            if (password.getAttribute('type') === 'password'){
+                password.setAttribute('type','text')
+            }
+            else {
+                password.setAttribute('type','password')
+            }
+        }
+
+
+        
+
+
+
+    </script>
+    </body>
+</html>
